@@ -13,14 +13,35 @@
       #map {
         height: 100%;
       }
+
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      #floating-panel {
+        margin-left: -52px;
+      }
+      
     </style>
   </head>
   <body>
+  <div id="floating-panel">
+      <button id="drop" onclick="drop()">Drop Markers</button>
+    </div>
     <div id="map"></div>
 
     <script src="map.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEMdCoNAKYlpW3M1Y5st6pQ9E3mqp_xYw&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEMdCoNAKYlpW3M1Y5st6pQ9E3mqp_xYw&callback=initalize"
     async defer></script>
   </body>
 </html>
